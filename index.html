@@ -1,0 +1,33 @@
+<!-- Kacper Letowski-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <style>
+        div {
+            border: thick double black;
+        }
+        textarea {
+            width: 50%;
+        }
+    </style>
+    <title>Classwork</title>
+</head>
+<body onload="init();">
+    <h2>Daily Log</h2>
+    <form id="logform">
+        <textarea name="loginput"></textarea>
+    </form>
+
+    <button onclick="addMessage(logFormObject.loginput.value);">
+        Add To Log
+    </button>
+
+    <hr />
+
+    <div id="logoutput">Log --</div>
+</body>
+</html>

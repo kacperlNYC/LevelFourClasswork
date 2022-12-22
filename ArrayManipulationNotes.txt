@@ -1,0 +1,14 @@
+ Arrays
+  const arrays can have their values changed and added (arr[0] = 4)
+  arr.push(a); appends to end
+  arr.unshift(a); appends to begining
+  arr.slice(startIndex, n, firstValue, ...); returns & appends to specified array. With only 2 params it only returns
+  arr.indexOf(value); returns where value is first found
+  arr.lastIndexOf(value); where value is last found
+  arr.find(someBooleanFunction(i)); return value that satisfies function 
+  arr.findIndex(...)
+  arr.pop() returns and removes last value 
+  arr.shift() returns and removes first value
+  arr.splice(startIndex, n); returns and removes n values
+  newarr = arr.concat(arr2); returns combined array. References to objects are copied.
+  Spread operator: newarr = [...arr1, "something", ...arr2]

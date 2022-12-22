@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        body {
+            font: bold 18pt calibri;
+        }
+    </style>
+    <script>
+        function init()
+        {
+            arrayOutput = document.getElementById("divout");
+
+            theList = ["1st", "2nd", "3rd"];
+            randomList = [];
+            let randomLength = Math.trunc(Math.random() * 50 + 50)
+
+            for (let i = 0; i < randomLength; i++)
+            {
+                randomList[i] = Math.trunc(Math.random() * 20 - 10 + 1)
+            }
+
+
+            display();
+        }
+
+        function display()
+        {
+            arrayOutput.innerHTML = "";
+            for (var i =0; i < randomList.length; i++)
+            {
+                arrayOutput.innerHTML += i + ": " + randomList[i] + "<br />"
+            }
+        }
+    </script>
+</head>
+<body onload="init();">
+    <div id="divout"></div>
+</body>
+</html>
